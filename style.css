@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+html{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Lato', sans-serif;
+color: white;
+width: 100vw;
+height: 100vh;
+}
+body{
+  background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20, 20, 4)),url(https://uploads.metropoles.com/wp-content/uploads/2017/02/01172831/iStock-537361186.jpg) ;
+  background-position: center ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 0;
+  padding: 0;
+  margin: 0;
+} 
+.menu-h{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+}
+a{
+  color: aliceblue;
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+  display: inline-flex;
+}
+li{
+  padding: 15px;
+  color: aliceblue;
+}
+i{
+  width: 50px;
+  height: 50px;
+}
+.main-text{
+  color: rgb(251, 255, 0)
+}
+.sub-text{
+  color: rgb(0, 0, 0);
+  background-color: rgba(1, 17, 15, );
+}
+main{
+  display: flex;
+  height: 85vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header{
+  background-color: transparent;
+}
+.butt{
+  padding-top: 30px;
+  display: flex;
+  gap: 30px;
+}
+.exp, .personal{
+  color: aliceblue;
+  padding: 20px;
+  font-size: 1.1rem;
+  border-radius: 12px;
+  background-color: transparent;
+  text-wrap: wrap;
+  border: 1px solid white;
+}
+.butt button{
+  cursor: pointer;
+  letter-spacing: 0.2rem;
+  position: relative;
+  transition: 1.5s;
+}
+.butt button:hover {
+  color: rgb(251, 255, 0);
+  border: none;
+}
+.butt button:before {
+  content: ' ';
+  border-radius: 20px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 0;
+  height: 60px;
+  background-color: rgb(61, 61, 61);
+  z-index: -1;
+  transition: 2s;
+}
+.butt button:hover:before {
+  width: 100%;
+}
+.menu-h ul a {
+  text-decoration: none;
+  color: white;
+  padding: 1.5rem;
+  transform: 2ms ease-in;
+  position: relative;
+}
+.menu-h ul a:before {
+  content: ' ';
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 0px;
+  height: 1px;
+  background-color: rgb(251, 255, 0);
+  transition: all 1s ease; 
+}
+.menu-h ul a:hover:before {
+  width: 100%;
+}
+footer > img{
+  width: 50px;
+  height: 50px;
+  padding-right: 10px;
+}
+footer{
+  display: flex;
+  justify-content: center;
+  
+}
+/*display: inline-flex; tirar isso do ul com o @media para transformar em lista dps
